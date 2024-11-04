@@ -1,0 +1,105 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #9ab5ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 500ms ease;
+}
+.toggle {
+  width: 200px;
+  height: 90px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  background-image: linear-gradient(180deg, #364bba 0%, #a979d9 100%);
+  box-shadow: inset 0 6px 8px 3px rgba(0, 0, 0, 0.35);
+  border-radius: 45px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  overflow: hidden;
+  transition: background-image 500ms ease, box-shadow 500ms ease;
+  cursor: pointer;
+}
+.switcher {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  z-index: 4;
+  left: 10px;
+  box-shadow: 2px 1px 6px 0 rgba(0, 0, 0, 0.25);
+  transition: transform 500ms ease;
+}
+.light {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  background-image: linear-gradient(
+    180deg,
+    #a5c5eb 26.18%,
+    rgba(81, 234, 255, 0) 69.94%
+  );
+  position: absolute;
+  right: 35px;
+  top: 18px;
+  transition: transform 500ms ease, background-image 500ms ease;
+}
+.forest {
+  position: absolute;
+  bottom: -25px;
+  z-index: 3;
+  fill: #43488b;
+  transition: fill 500ms ease;
+}
+.mountains {
+  position: absolute;
+  z-index: 2;
+  bottom: -18px;
+  fill: #6783ca;
+  transition: fill 500ms ease;
+}
+.back-mount {
+  position: absolute;
+  bottom: -48px;
+  fill: #445697;
+  transition: fill 500ms ease;
+}
+
+/* ------------LIGHT------------- */
+.container-light {
+  background-color: #c2fdd4;
+}
+
+.toggle-light {
+  background-image: linear-gradient(180deg, #abfaff 0%, #d5ffab 100%);
+  box-shadow: inset 0 6px 8px 3px rgba(0, 0, 0, 0.1);
+}
+
+.switcher-light {
+  transform: translateX(120px);
+}
+
+.light-light {
+  background-image: linear-gradient(
+    180deg,
+    #f6f061 37.07%,
+    rgba(97, 237, 246, 0) 69.94%
+  );
+  transform: translateX(-90px);
+}
+
+.forest-light {
+  fill: #347e82;
+}
+
+.mountains-light {
+  fill: #86d2a0;
+}
+
+.back-mount-light {
+  fill: #a2ebd7;
+}
